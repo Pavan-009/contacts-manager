@@ -8,12 +8,4 @@ router.route('/').get(getallcontacts).post(createContact);
 router.route('/:id').get(getContact).put(updateContact).delete(deleteContact)
 
 
-router.route('/').get((req,res)=>{
-    res.send({"name" : "Pavan Kumar"});
-});
-
-router.route('/').get((req,res)=>{
-    res.send({"name" : "Pavan Kumar"});
-});
-
 module.exports = router;
